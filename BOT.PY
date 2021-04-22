@@ -62,7 +62,7 @@ async def lyrics(ctx, msg1, msg2):
         await ctx.send(f'{ctx.author.mention}')
 
 #ends
-@bot.command (help='Youtube video search. *ytsearch video title with no of results desired ')
+@bot.command (help='Youtube video search. *ytsearch video title with number of results desired ')
 async def ytsearch(ctx, *, info):
           query = " ".join(info.split(" ")[0:-1]).replace(" ","+")
           num = int(info.split(" ")[-1])
@@ -73,7 +73,6 @@ async def ytsearch(ctx, *, info):
                          await ctx.send("https://www.youtube.com/watch?v=temp&list="+item["id"]["playlistId"])
                  elif item["id"]["kind"] == "youtube#video":
                          await ctx.send("https://www.youtube.com/watch?v="+item["id"]["videoId"])
-                
 
             
         
