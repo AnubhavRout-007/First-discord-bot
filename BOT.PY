@@ -31,7 +31,7 @@ async def hello(ctx):
 
 #GOOGLE SEARCH 
 #starts 
-@bot.command(help='Google Search')
+@bot.command(pass_help='Google Search')
 async def gsearch( ctx, n :int):
         await ctx.send("Type the search query")
         def check(msg):
@@ -73,7 +73,7 @@ async def ytsearch(ctx, *, info):
                          await ctx.send("https://www.youtube.com/watch?v=temp&list="+item["id"]["playlistId"])
                  elif item["id"]["kind"] == "youtube#video":
                          await ctx.send("https://www.youtube.com/watch?v="+item["id"]["videoId"])
-
-            #test
+                
+    
         
 bot.run(token)
