@@ -1,0 +1,148 @@
+2021-09-23 18:55:58.781  INFO 12776 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        3.3.2.3
+	Build:          1239
+	Build time:     31.08.2021 17:26:20 UTC
+	Branch          main
+	Commit:         2ad6b46
+	Commit time:    31.08.2021 17:17:13 UTC
+	JVM:            16
+	Lavaplayer      1.3.93-original
+
+2021-09-23 18:55:58.903  INFO 12776 --- [main] lavalink.server.Launcher                 : Starting Launcher on LAPTOP-6K5T9O1F with PID 12776 (C:\Users\Anubhab Rout\TEST\Lavalink.jar started by Anubhab Rout in C:\Users\Anubhab Rout\TEST)
+2021-09-23 18:55:58.904  INFO 12776 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2021-09-23 18:55:59.061  WARN 12776 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-09-23 18:56:00.105  WARN 12776 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2021-09-23 18:56:00.138  INFO 12776 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2021-09-23 18:56:00.139  INFO 12776 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1169 ms
+2021-09-23 18:56:00.588  WARN 12776 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2021-09-23 18:56:00.910  INFO 12776 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2021-09-23 18:56:01.141  INFO 12776 --- [main] lavalink.server.config.KoeConfiguration  : OS: Windows 10, Arch: amd64
+2021-09-23 18:56:01.141  WARN 12776 --- [main] lavalink.server.config.KoeConfiguration  : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
+2021-09-23 18:56:01.355  INFO 12776 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-23 18:56:01.630  INFO 12776 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2021-09-23 18:56:01.642  INFO 12776 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2021-09-23 18:56:01.705  INFO 12776 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 6969 (http) with context path ''
+2021-09-23 18:56:01.709  INFO 12776 --- [main] lavalink.server.Launcher                 : Started Launcher in 3.442 seconds (JVM running for 4.03)
+2021-09-23 18:56:01.711  INFO 12776 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/freyacodes/Lavalink/issues/295
+2021-09-23 18:58:07.882  INFO 12776 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-23 18:58:07.883  INFO 12776 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-23 18:58:07.892  INFO 12776 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-09-23 18:58:07.909  INFO 12776 --- [XNIO-1 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /[0:0:0:0:0:0:0:1]:61208
+2021-09-23 18:58:07.955  INFO 12776 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Connection successfully established from /[0:0:0:0:0:0:0:1]:61208
+2021-09-23 18:58:07.975  INFO 12776 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "configureResuming", "key": "node_music", "timeout": 60}
+2021-09-23 18:59:12.411  INFO 12776 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /[0:0:0:0:0:0:0:1]:61208 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with key node_music
+2021-09-23 18:59:26.114  INFO 12776 --- [XNIO-1 task-2] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /[0:0:0:0:0:0:0:1]:64667
+2021-09-23 18:59:26.118  INFO 12776 --- [XNIO-1 task-2] lavalink.server.io.SocketServer          : Connection successfully established from /[0:0:0:0:0:0:0:1]:64667
+2021-09-23 18:59:26.119  INFO 12776 --- [XNIO-1 I/O-11] lavalink.server.io.SocketServer          : {"op": "configureResuming", "key": "node_music", "timeout": 60}
+2021-09-23 18:59:50.187  WARN 12776 --- [XNIO-1 I/O-11] lavalink.server.io.SocketServer          : Shutdown resumable session with key node_music because it has the same key as a newly disconnected resumable session.
+2021-09-23 18:59:50.187  INFO 12776 --- [XNIO-1 I/O-11] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-09-23 18:59:50.188  INFO 12776 --- [XNIO-1 I/O-11] lavalink.server.io.SocketServer          : Connection closed from /[0:0:0:0:0:0:0:1]:64667 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with key node_music
+2021-09-23 18:59:58.102  INFO 12776 --- [XNIO-1 task-3] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /[0:0:0:0:0:0:0:1]:52794
+2021-09-23 18:59:58.105  INFO 12776 --- [XNIO-1 task-3] lavalink.server.io.SocketServer          : Connection successfully established from /[0:0:0:0:0:0:0:1]:52794
+2021-09-23 18:59:58.107  INFO 12776 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "configureResuming", "key": "node_music", "timeout": 60}
+2021-09-23 19:00:12.428  INFO 12776 --- [pool-1-thread-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-09-23 19:00:50.191  INFO 12776 --- [pool-2-thread-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-09-23 19:01:14.914  INFO 12776 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : Connection closed from /[0:0:0:0:0:0:0:1]:52794 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with key node_music
+2021-09-23 19:01:25.968  INFO 12776 --- [XNIO-1 task-4] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /[0:0:0:0:0:0:0:1]:53771
+2021-09-23 19:01:25.971  INFO 12776 --- [XNIO-1 task-4] lavalink.server.io.SocketServer          : Connection successfully established from /[0:0:0:0:0:0:0:1]:53771
+2021-09-23 19:01:25.973  INFO 12776 --- [XNIO-1 I/O-11] lavalink.server.io.SocketServer          : {"op": "configureResuming", "key": "node_music", "timeout": 60}
+2021-09-23 19:02:14.929  INFO 12776 --- [pool-3-thread-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-09-23 19:04:07.683  INFO 12776 --- [XNIO-1 I/O-11] lavalink.server.io.SocketServer          : Connection closed from /[0:0:0:0:0:0:0:1]:53771 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with key node_music
+2021-09-23 19:04:13.690  INFO 12776 --- [XNIO-1 task-5] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /[0:0:0:0:0:0:0:1]:64585
+2021-09-23 19:04:13.694  INFO 12776 --- [XNIO-1 task-5] lavalink.server.io.SocketServer          : Connection successfully established from /[0:0:0:0:0:0:0:1]:64585
+2021-09-23 19:04:13.695  INFO 12776 --- [XNIO-1 I/O-9] lavalink.server.io.SocketServer          : {"op": "configureResuming", "key": "node_music", "timeout": 60}
+2021-09-23 19:05:07.695  INFO 12776 --- [pool-4-thread-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-09-23 19:05:50.118  INFO 12776 --- [XNIO-1 I/O-9] lavalink.server.io.SocketServer          : Connection closed from /[0:0:0:0:0:0:0:1]:64585 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with key node_music
+2021-09-23 19:05:58.180  INFO 12776 --- [XNIO-1 task-6] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /[0:0:0:0:0:0:0:1]:60487
+2021-09-23 19:05:58.184  INFO 12776 --- [XNIO-1 task-6] lavalink.server.io.SocketServer          : Connection successfully established from /[0:0:0:0:0:0:0:1]:60487
+2021-09-23 19:05:58.185  INFO 12776 --- [XNIO-1 I/O-3] lavalink.server.io.SocketServer          : {"op": "configureResuming", "key": "node_music", "timeout": 60}
+2021-09-23 19:06:50.129  INFO 12776 --- [pool-5-thread-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-09-23 19:13:10.378  INFO 12776 --- [XNIO-1 I/O-3] lavalink.server.io.SocketServer          : Connection closed from /[0:0:0:0:0:0:0:1]:60487 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with key node_music
+2021-09-23 19:14:15.364  INFO 2860 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        3.3.2.3
+	Build:          1239
+	Build time:     31.08.2021 17:26:20 UTC
+	Branch          main
+	Commit:         2ad6b46
+	Commit time:    31.08.2021 17:17:13 UTC
+	JVM:            16
+	Lavaplayer      1.3.93-original
+
+2021-09-23 19:14:15.459  INFO 2860 --- [main] lavalink.server.Launcher                 : Starting Launcher on LAPTOP-6K5T9O1F with PID 2860 (C:\Users\Anubhab Rout\TEST\Lavalink.jar started by Anubhab Rout in C:\Users\Anubhab Rout\TEST)
+2021-09-23 19:14:15.460  INFO 2860 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2021-09-23 19:14:15.560  WARN 2860 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-09-23 19:14:16.551  WARN 2860 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2021-09-23 19:14:16.573  INFO 2860 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2021-09-23 19:14:16.573  INFO 2860 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1067 ms
+2021-09-23 19:14:17.082  WARN 2860 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2021-09-23 19:14:17.391  INFO 2860 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2021-09-23 19:14:17.623  INFO 2860 --- [main] lavalink.server.config.KoeConfiguration  : OS: Windows 10, Arch: amd64
+2021-09-23 19:14:17.625  WARN 2860 --- [main] lavalink.server.config.KoeConfiguration  : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
+2021-09-23 19:14:17.859  INFO 2860 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-23 19:14:18.117  INFO 2860 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2021-09-23 19:14:18.128  INFO 2860 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2021-09-23 19:14:18.193  INFO 2860 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 6969 (http) with context path ''
+2021-09-23 19:14:18.197  INFO 2860 --- [main] lavalink.server.Launcher                 : Started Launcher in 3.257 seconds (JVM running for 3.653)
+2021-09-23 19:14:18.199  INFO 2860 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/freyacodes/Lavalink/issues/295
+2021-09-23 19:17:44.095  INFO 13248 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        3.3.2.3
+	Build:          1239
+	Build time:     31.08.2021 17:26:20 UTC
+	Branch          main
+	Commit:         2ad6b46
+	Commit time:    31.08.2021 17:17:13 UTC
+	JVM:            16
+	Lavaplayer      1.3.93-original
+
+2021-09-23 19:17:44.181  INFO 13248 --- [main] lavalink.server.Launcher                 : Starting Launcher on LAPTOP-6K5T9O1F with PID 13248 (C:\Users\Anubhab Rout\TEST\Lavalink.jar started by Anubhab Rout in C:\Users\Anubhab Rout\TEST)
+2021-09-23 19:17:44.183  INFO 13248 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2021-09-23 19:17:44.289  WARN 13248 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-09-23 19:17:45.275  WARN 13248 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2021-09-23 19:17:45.296  INFO 13248 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2021-09-23 19:17:45.297  INFO 13248 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1062 ms
+2021-09-23 19:17:45.763  WARN 13248 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2021-09-23 19:17:46.071  INFO 13248 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2021-09-23 19:17:46.327  INFO 13248 --- [main] lavalink.server.config.KoeConfiguration  : OS: Windows 10, Arch: amd64
+2021-09-23 19:17:46.328  WARN 13248 --- [main] lavalink.server.config.KoeConfiguration  : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
+2021-09-23 19:17:46.579  INFO 13248 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-23 19:17:46.846  INFO 13248 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2021-09-23 19:17:46.857  INFO 13248 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2021-09-23 19:17:46.931  INFO 13248 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 6969 (http) with context path ''
+2021-09-23 19:17:46.935  INFO 13248 --- [main] lavalink.server.Launcher                 : Started Launcher in 3.291 seconds (JVM running for 3.697)
+2021-09-23 19:17:46.937  INFO 13248 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/freyacodes/Lavalink/issues/295
+2021-09-23 19:18:12.672  INFO 13248 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-23 19:18:12.673  INFO 13248 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-23 19:18:12.679  INFO 13248 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2021-09-23 19:18:12.700  INFO 13248 --- [XNIO-1 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /[0:0:0:0:0:0:0:1]:60265
+2021-09-23 19:18:12.750  INFO 13248 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Connection successfully established from /[0:0:0:0:0:0:0:1]:60265
+2021-09-23 19:18:12.766  INFO 13248 --- [XNIO-1 I/O-9] lavalink.server.io.SocketServer          : {"op": "configureResuming", "key": "node_music", "timeout": 60}
+2021-09-23 19:18:15.069  INFO 13248 --- [XNIO-1 I/O-9] lavalink.server.io.SocketServer          : Connection closed from /[0:0:0:0:0:0:0:1]:60265 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with key node_music
+2021-09-23 19:18:26.796  INFO 13248 --- [XNIO-1 task-2] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /[0:0:0:0:0:0:0:1]:64387
+2021-09-23 19:18:26.800  INFO 13248 --- [XNIO-1 task-2] lavalink.server.io.SocketServer          : Connection successfully established from /[0:0:0:0:0:0:0:1]:64387
+2021-09-23 19:18:26.802  INFO 13248 --- [XNIO-1 I/O-3] lavalink.server.io.SocketServer          : {"op": "configureResuming", "key": "node_music", "timeout": 60}
+2021-09-23 19:19:15.071  INFO 13248 --- [pool-1-thread-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-09-23 19:20:23.603  INFO 13248 --- [XNIO-1 I/O-3] lavalink.server.io.SocketServer          : Connection closed from /[0:0:0:0:0:0:0:1]:64387 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with key node_music
