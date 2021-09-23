@@ -28,8 +28,12 @@ class Music (commands.Cog):
             return
 
         else:
-            channel = ctx.message.author.voice.channel
-            await channel.connect()
+            voice_channel = ctx.message.author.voice.channel
+        player = self.bot.music.player_manager.create(ctx.guild.id, endpoint = str(ctx.guild.region))
+        if not player.is_connected:
+            player.store('channel', ctx.channel.id)
+            await self.connect_to(ctx.guild.id, str(voice_channel.id))
+        
 
     @commands.command(name='play', help='This commands make the bot to play the song of your choice', aliases=['Play'])
     async def play(self, ctx, *, query):
