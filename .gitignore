@@ -2,3 +2,4 @@
 .google-cookie
 __pycache__/
 Lavalink.jar
+logs/
