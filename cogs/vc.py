@@ -40,14 +40,24 @@ class Music (commands.Cog):
 
     @commands.command(name='play', help='This commands make the bot to play the song of your choice', aliases=['Play'])
     async def play(self, ctx, *, query):
+        await ctx.invoke(self.bot.get_command('Join'))
         def check(m):
             return m.author.id == ctx.author.id
 
-        # try:
+        
+        option = query.split()[-1]
+        query = query[:-1]
+
         player = self.bot.music.player_manager.get(ctx.guild.id)
         query = f'ytsearch:{query}'
         results = await player.node.get_tracks(query)
-        tracks = results['tracks'][0:5]
+
+        if option=='l':
+            tracks = results['tracks'][0]
+       
+        else:
+            tracks = results['tracks'][0:5]
+        
         i = 0
         query_result = ''
         for track in tracks:
@@ -79,27 +89,31 @@ class Music (commands.Cog):
         ws = self.bot._connection._get_websocket(guild_id)
         await ws.voice_state(str(guild_id), channel_id)
 
-    @commands.command(name=queue,help="This command helps the current queue of the songs playing", aliases=["Queue"])
+    @commands.command(help="This command helps the current queue of the songs playing", aliases=["Queue"])
     async def queue(self, ctx, page: int = 1):
         player = self.bot.music.player_manager.get(ctx.guild.id)
         queue = player.queue
-        items_per_page = 10
+        items_per_page = 15
         pages = math.ceil(len(queue)/items_per_page)
         start = (page-1)*items_per_page
         end = start + items_per_page
-        description = f"Currently Playing: **[{player.current.title}]** ({player.current.uri})**\n"
+        description = f"Currently Playing: **[{player.current.title}]** **({player.current.uri})**\n\n"
         if len(queue):
             for index, track in enumerate(queue[start:end], start=1):
                 requester = ctx.guild.get_member(track.requester)
                 description += f"{index}. **{track.title}** ({track.uri})\n"
-        else:
-            description += "Queue is empty."
+        elif player.current == None:
+            description = "Queue is Empty, /n Add some songs"
+            
 
-        embed = discord.Embed(title="Current Playlist",color=discord.Color.blue(),description=description)
+        embed = discord.Embed(title="Current Playlist",color=discord.Color.dark_teal(),description=description)
+
+        embed.set_footer(text=f'{page}/{pages}\n')  
+        await ctx.send(embed=embed)  
 
     @commands.command(name='pause', help='This command makes the player pause', aliases=['Pause'])
     async def pause(self, ctx):
-        player = self.get_player(ctx)
+        player = self.bot.music.player_manager.get_player(ctx)
 
         if player.is_paused:
             embed= discord.Embed(title="Player is already Paused\n\nPlay to continue",color=discord.Color.dark_red())
@@ -111,15 +125,33 @@ class Music (commands.Cog):
     # async def resume(self, ctx):
     #     player = self.get_player(ctx)
 
-    #     if player.is_paused:
-    #         embed= discord.Embed(title="Player is already Paused\n\nPlay to continue",color=discord.Color.dark_red())
+    #   if player.is_paused:
+    #        embed= discord.Embed(title="Player is already Paused\n\nPlay to continue",color=discord.Color.dark_red())
         
-    #     await player.set_pause(True)  
-    #     embed = discord.Embed(title="Paused",color=discord.Color.blue())  
+    #    await player.set_pause(True)  
+    #    embed = discord.Embed(title="Paused",color=discord.Color.blue())  
+    
     @commands.command(name='Leave', help='This command makes the bot leave the voice channel', aliases=['leave'])
-    async def stop(self, ctx):
-        VoiceClient = ctx.voice_client
-        await VoiceClient.disconnect()
+    async def leave(self, ctx):
+      
+        player = self.bot.music.player_manager.get(ctx.guild.id)
+
+        if not player.is_connected:
+            return await ctx.send('Not connected.')
+
+        if not ctx.author.voice or (player.is_connected and ctx.author.voice.channel.id != int(player.channel_id)):
+            return await ctx.send('You\'re not in my voicechannel!')
+
+        player.queue.clear()
+     
+        await player.stop()
+       
+        await ctx.guild.change_voice_state(channel=None)
+        await ctx.send(' Disconnected.')
+
+    # async def stop(self, ctx):
+    #     VoiceClient = ctx.voice_client
+    #     await VoiceClient.disconnect()
 
 
 def setup(bot):

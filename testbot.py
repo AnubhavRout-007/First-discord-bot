@@ -6,6 +6,7 @@ from discord.ext import commands,tasks
 from random import choice
 from discord import client
 
+
 load_dotenv()
 token = os.getenv('TOKEN_discord')
 
@@ -13,7 +14,7 @@ bot = commands.Bot(command_prefix='*')
 
 
 
-status = ['Trying out something new','Chilling listening to music','Procrastinating','Sleeping']
+status = ['Trying out something new','Chilling listening to music']
 @tasks.loop(seconds=100)
 async def change_status():
 	await bot.change_presence(activity=discord.Game(choice(status)))

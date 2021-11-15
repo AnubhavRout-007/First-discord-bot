@@ -16,7 +16,7 @@ class Search (commands.Cog):
 
     #LYRICS LOOK UP 
     #starts
-    @commands.command(help='Enter your Search query and number of results for getting the required number of results')
+    @commands.command(help='Enter your Search query and number of results for getting the required number of results' ,aliases=['gsearch'])
     async def GSearch(self,ctx):
             await ctx.send("Enter your Search Query")
             def check(msg):

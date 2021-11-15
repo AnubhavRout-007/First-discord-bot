@@ -3,3 +3,4 @@
 __pycache__/
 Lavalink.jar
 logs/
+.log
